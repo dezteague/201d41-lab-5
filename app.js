@@ -75,6 +75,7 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
   var arrayTotal = sum(sum(testArray[0], testArray[1])[0], testArray[2])[0];
+  console.log(arrayTotal);
   return [arrayTotal, testArray + ' was passed in as an array of numbers, and ' + arrayTotal + ' is their sum.'];
 }
 
@@ -96,11 +97,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  var arrayProduct = multiply(multiply(testArray[0], testArray[1])[0], testArray[2])[0];
+  console.log(arrayProduct);
+  return [arrayProduct, 'The numbers ' + testArray + ' have a product of ' + arrayProduct + '.'];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
